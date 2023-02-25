@@ -20,6 +20,11 @@ maybe rename repo to
   macroquad, wasm, wbindgen, github pages
   
 ## sources:
+### build script
 - https://gist.github.com/tgolsson/d78f7887a8542f3fd6f125070e5e22d6
 - https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
 - https://gist.github.com/olefasting/15ae263da4cf1ba308ce55c15c9b221b
+
+### rename script
+- https://stackoverflow.com/questions/44912189/is-there-any-way-to-rename-a-cargo-project
+- https://github.com/rust-lang/rust/issues/55481
