@@ -1,4 +1,4 @@
-# macroquad_web_template
+# mq-wasm-pages
 
 edit build script
 - take the correct directory/file/project name in the build script
