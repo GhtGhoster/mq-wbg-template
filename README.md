@@ -10,6 +10,10 @@ edit build script
 - add a local server (maybe python?)
 
 make a script to rename the whole project
+- cargo clean
+- replace name in Cargo.toml
+- move out and rename directory (figure out how GitHub templates work)
+- cargo build/clean (--release)
 
 make both scripts in both ps1 and sh
 
