@@ -9,19 +9,17 @@ edit build script
   (no online external dependencies other than cargo)
 - add a local server (maybe python?)
 
+(testing how github templates work)
 make a script to rename the whole project
 - cargo clean
 - replace name in Cargo.toml
 - move out and rename directory (figure out how GitHub templates work)
 - cargo build/clean (--release)
 
-make both scripts in both ps1 and sh
-
-add proper cargo.toml keys
+make both scripts in both ps1 ~~and sh~~
 
 add a read_me with instructions, description and credits
-maybe rename repo to
-  macroquad, wasm, wbindgen, github pages
+add license to github repo and cargo.toml
   
 ## sources:
 ### build script
