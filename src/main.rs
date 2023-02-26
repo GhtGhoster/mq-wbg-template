@@ -1,7 +1,7 @@
 
 use macroquad::prelude::*;
 
-#[macroquad::main("macroquad_web_template")]
+#[macroquad::main("mq-wasm-pages")]
 async fn main() {
     println!("Hello, world!");
 
