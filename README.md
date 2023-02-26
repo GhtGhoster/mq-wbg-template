@@ -32,5 +32,6 @@ add license to github repo and cargo.toml
 - https://gist.github.com/olefasting/15ae263da4cf1ba308ce55c15c9b221b
 
 ### rename script
+- https://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom
 - https://stackoverflow.com/questions/44912189/is-there-any-way-to-rename-a-cargo-project
 - https://github.com/rust-lang/rust/issues/55481
