@@ -1,15 +1,17 @@
 # Macroquad build template for WASM with support for GitHub Pages
 
-This repository serves as a template for projects based on the rust `macroquad` crate.
+This repository serves as a template for projects based on the rust [`macroquad`](https://github.com/not-fl3/macroquad) crate.
 Its intention is making WASM building and binding generation process as painless as possible.
 
 ## Instructions and dependencies:
 
-Once you created a repository through this template, run the `rename.sh` script for cargo to work.
+Once you created a repository through this template, run the [`rename.sh`](rename.sh) script for cargo to work.
 
-When you want to build your project for web, run the `build.sh` script. (This script assumes you have the `wasm-bindgen` command available to you.)
+When you want to build your project for web, run the [`build.sh`](build.sh) script.
+(This script assumes you have the `wasm-bindgen` command available to you.)
 
-To test your built project locally, run a local server of your choosing to host the repository directory. (This is necessary over just opening the `index.html` file in your browser so that the required resources load properly)
+To test your built project locally, run a local server of your choosing to host the repository directory.
+(This is necessary over just opening the [`index.html`](index.html) file in your browser so that the required resources load properly)
 
 When you're happy with the built project, it's already ready for GitHub Pages, just enable the feature in your repository settings.
 
