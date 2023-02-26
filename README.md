@@ -6,13 +6,15 @@ Its intention is making WASM building and binding generation process as painless
 ## Instructions and dependencies:
 
 Once you created a repository through this template, run the `rename.sh` script for cargo to work.
+
 When you want to build your project for web, run the `build.sh` script. (This script assumes you have the `wasm-bindgen` command available to you.)
+
 To test your built project locally, run a local server of your choosing to host the repository directory. (This is necessary over just opening the `index.html` file in your browser so that the required resources load properly)
+
 When you're happy with the built project, it's already ready for GitHub Pages, just enable the feature in your repository settings.
 
 ## Sources:
 
-### build script
 - https://gist.github.com/tgolsson/d78f7887a8542f3fd6f125070e5e22d6
 - https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
 - https://gist.github.com/olefasting/15ae263da4cf1ba308ce55c15c9b221b
@@ -20,13 +22,6 @@ When you're happy with the built project, it's already ready for GitHub Pages, j
 
 ## TODO:
 
-- make run script
-  - run build script
-  - host a local server (maybe python?)
-  - open it in browser
+- Make scripts available in .sh for Linux
 
-- make scripts available in .sh for Linux
-
-- add license to github repo and cargo.toml
-  
-## sources:
+- Add license to github repo and cargo.toml
