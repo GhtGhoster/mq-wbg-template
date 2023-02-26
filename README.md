@@ -1,39 +1,32 @@
-# mq-wasm-pages
+# Macroquad build template for WASM with support for GitHub Pages
 
-edit build script
-- take the correct directory/file/project name in the build script
-- make it shut up about existing directories
-- make it log progress (at least say something)
+This repository serves as a template for projects based on the rust `macroquad` crate.
+Its intention is making WASM building and binding generation process as painless as possible.
 
-make run script
-- run build script
-- host a local server (maybe python?)
-- open it in browser
+## Instructions and dependencies:
 
-(testing how github templates work)
-make a script to rename the whole project
-- cargo clean
-- replace name in Cargo.toml
-- move out and rename directory (figure out how GitHub templates work)
-- cargo build/clean (--release)
+Once you created a repository through this template, run the `rename.sh` script for cargo to work.
+When you want to build your project for web, run the `build.sh` script. (This script assumes you have the `wasm-bindgen` command available to you.)
+To test your built project locally, run a local server of your choosing to host the repository directory. (This is necessary over just opening the `index.html` file in your browser so that the required resources load properly)
+When you're happy with the built project, it's already ready for GitHub Pages, just enable the feature in your repository settings.
 
-make both scripts in both ps1 ~~and sh~~
+## Sources:
 
-add a read_me with instructions, description and credits
-- description
-- instructions / dependencies
-- sources
-
-add license to github repo and cargo.toml
-  
-## sources:
 ### build script
 - https://gist.github.com/tgolsson/d78f7887a8542f3fd6f125070e5e22d6
 - https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
 - https://gist.github.com/olefasting/15ae263da4cf1ba308ce55c15c9b221b
 - https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js
 
-### rename script
-- https://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom
-- https://stackoverflow.com/questions/44912189/is-there-any-way-to-rename-a-cargo-project
-- https://github.com/rust-lang/rust/issues/55481
+## TODO:
+
+- make run script
+  - run build script
+  - host a local server (maybe python?)
+  - open it in browser
+
+- make scripts available in .sh for Linux
+
+- add license to github repo and cargo.toml
+  
+## sources:
