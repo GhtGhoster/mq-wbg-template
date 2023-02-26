@@ -19,6 +19,10 @@ make a script to rename the whole project
 make both scripts in both ps1 ~~and sh~~
 
 add a read_me with instructions, description and credits
+- description
+- instructions / dependencies
+- sources
+
 add license to github repo and cargo.toml
   
 ## sources:

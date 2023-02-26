@@ -2,10 +2,6 @@
 name = "mq-wasm-pages"
 version = "0.1.0"
 edition = "2021"
-authors = ["GhtGhoster"]
-readme = "README.md"
-description = "A template package for macroquad wasm apps, with build scripts for GitHub Pages"
-repository = "https://github.com/GhtGhoster/mq-wasm-pages"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
