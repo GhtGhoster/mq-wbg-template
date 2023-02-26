@@ -39,8 +39,6 @@ dual licensed as above, without any additional terms or conditions.
 
 ## TODO:
 
-- Add rust crate categories https://crates.io/categories
-
 - Is this necessary? `rustup target add wasm32-unknown-unknown`
 
 - Is this necessary? `cargo install wasm-bindgen`
@@ -50,5 +48,3 @@ dual licensed as above, without any additional terms or conditions.
   - `basic-http-server .`
 
 - Make scripts available in .sh for Linux
-
-- Add license to github repo and cargo.toml
