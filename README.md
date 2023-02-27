@@ -5,10 +5,12 @@ Its intention is making WASM building and binding generation process as painless
 
 ## Instructions and dependencies:
 
-Once you created a repository through this template, run the [`rename.sh`](rename.sh) script for cargo to work.
+Once you created a repository through this template, run the [`rename.ps1`](rename.ps1) script for cargo and the [`build.ps1`](build.ps1) script to work.
 
-When you want to build your project for web, run the [`build.sh`](build.sh) script.
-(This script assumes you have the `wasm-bindgen` command available to you.)
+If you've never done anything around rust with wasm, it's recommended to run the [`setup.ps1`](setup.ps1) script.
+This will install `wasm-bindgen-cli` and add `wasm32-unknown-unknown` to possible compilation targets.
+
+When you want to build your project for web, run the [`build.ps1`](build.ps1) script.
 
 To test your built project locally, run a local server of your choosing to host the repository directory.
 (This is necessary over just opening the [`index.html`](index.html) file in your browser so that the required resources load properly)
@@ -41,11 +43,7 @@ dual licensed as above, without any additional terms or conditions.
 
 ## TODO:
 
-- Is this necessary? `rustup target add wasm32-unknown-unknown`
-
-- Is this necessary? `cargo install wasm-bindgen`
-
-- Run script?
+- Run script? (local server)
   - `cargo install basic-http-server`
   - `basic-http-server .`
 
