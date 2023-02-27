@@ -38,6 +38,8 @@ dual licensed as above, without any additional terms or conditions.
 
 ## TODO:
 
+- Rewrite [`README.md`](README.md) to fit future projects spawned from this template
+
 - Test polyglot scripts on Linux
 
 - Test audio capablities on web
