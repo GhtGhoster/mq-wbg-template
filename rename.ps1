@@ -1,3 +1,22 @@
+#!/bin/bash
+echo `# <#`
+
+# Bash goes here
+
+# PROJECT_NAME=$(find . -type d -links 2)
+PROJECT_NAME=${PWD/*\//}
+
+sed -i "s/mq-wasm-pages/${PROJECT_NAME}/" src/main.rs
+sed -i "s/mq-wasm-pages/${PROJECT_NAME}/" Cargo.toml
+sed -i "s/mq-wasm-pages/${PROJECT_NAME}/" intex.html
+
+cargo clean
+
+exit
+#> > $null
+
+# PowerShell goes here
+
 $NewName = Split-Path -Leaf $PWD
 
 $Content = Get-Content .\src\main.rs | ForEach-Object{$_ -replace [regex]::Escape("mq-wasm-pages"), $NewName}

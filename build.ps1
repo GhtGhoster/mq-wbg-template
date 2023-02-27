@@ -1,3 +1,33 @@
+#!/bin/bash
+echo `# <#`
+
+# Bash goes here
+
+# PROJECT_NAME=$(find . -type d -links 2)
+PROJECT_NAME=${PWD/*\//}
+
+cargo build --release --target wasm32-unknown-unknown
+
+echo -e "\033[1;34mGenerating WASM Binds"
+mkdir -p wbindgen
+wasm-bindgen --target web --out-dir "./wbindgen/" "./target/wasm32-unknown-unknown/release/$PROJECT_NAME.wasm"
+
+echo -e "\033[1;34mPatching generated JavaScript"
+sed -i "s/import \* as __wbg_star0 from 'env';//" wbindgen/$PROJECT_NAME.js
+sed -i "s/let wasm;/let wasm; export const set_wasm = (w) => wasm = w;/" wbindgen/$PROJECT_NAME.js
+sed -i "s/imports\['env'\] = __wbg_star0;/return imports.wbg\;/" wbindgen/$PROJECT_NAME.js
+sed -i "s/const imports = getImports();/return getImports();/" wbindgen/$PROJECT_NAME.js
+
+echo -e "\033[1;34mMoving files to ./web_res/ directory"
+mv wbindgen/$PROJECT_NAME.js web_res/$PROJECT_NAME.js
+mv wbindgen/${PROJECT_NAME}_bg.wasm web_res/$PROJECT_NAME.wasm
+
+echo -e "\033[1;34mDone!"
+exit
+#> > $null
+
+# PowerShell goes here
+
 $ProjectName = Split-Path -Leaf $PWD
 
 cargo build --release --target wasm32-unknown-unknown

@@ -5,6 +5,8 @@ Its intention is making WASM building and binding generation process as painless
 
 ## Instructions and dependencies:
 
+All scripts listed below are compatible with default Windows installation of PowerShell (v6+ not required) as well as bash for Linux (scripts are polyglot)
+
 Once you created a repository through this template, run the [`rename.ps1`](rename.ps1) script for cargo and the [`build.ps1`](build.ps1) script to work.
 
 If you've never done anything around rust with wasm, it's recommended to run the [`setup.ps1`](setup.ps1) script.
@@ -34,17 +36,13 @@ Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
 
-## Sources:
-
-- https://gist.github.com/tgolsson/d78f7887a8542f3fd6f125070e5e22d6
-- https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
-- https://gist.github.com/olefasting/15ae263da4cf1ba308ce55c15c9b221b
-- https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js
-
 ## TODO:
+
+- Test polyglot scripts on Linux
+
+- Test audio capablities on web
+  - https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
 
 - Run script? (local server)
   - `cargo install basic-http-server`
   - `basic-http-server .`
-
-- Make scripts available in .sh for Linux
