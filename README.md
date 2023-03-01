@@ -1,23 +1,50 @@
 # Macroquad build template for WASM with support for GitHub Pages
 
-This repository serves as a template for projects based on the rust [`macroquad`](https://github.com/not-fl3/macroquad) crate.
-Its intention is making WASM building and binding generation process as painless as possible.
+This repository serves as a template for projects based on the Rust
+[`macroquad`](https://github.com/not-fl3/macroquad) crate.
+Its intention is making WASM building, WASM bindings generation,
+and readying the repository for GitHub Pages as painless as possible.
 
 ## Instructions and dependencies:
 
-All scripts listed below are compatible with default Windows installation of PowerShell (v6+ not required) as well as bash for Linux (scripts are polyglot)
+All scripts listed below are compatible with default Windows installation of
+PowerShell (v6+ not required) as well as bash for Linux (scripts are polyglot)
 
-Once you created a repository through this template, run the [`rename.ps1`](rename.ps1) script for cargo and the [`build.ps1`](build.ps1) script to work.
+(The bash portion of the polyglot scripts is untested, use with caution
+and please report back with results or a pull request)
 
-If you've never done anything around rust with wasm, it's recommended to run the [`setup.ps1`](setup.ps1) script.
-This will install `wasm-bindgen-cli` and add `wasm32-unknown-unknown` to possible compilation targets.
+#### [`rename.ps1`](rename.ps1)
+This script changes the internal name of the project in the files
+[`src\main.rs`](src\main.rs),
+[`Cargo.toml`](Cargo.toml), and
+[`index.html`](index.html)
+to match the name of the repository, and allows `cargo` to work correctly.
 
-When you want to build your project for web, run the [`build.ps1`](build.ps1) script.
+(This is only necessary to run once after a repository was first created with the
+[`mq-wasm-pages`](https://github.com/GhtGhoster/mq-wasm-pages) template.) 
 
-To test your built project locally, run a local server of your choosing to host the repository directory.
-(This is necessary over just opening the [`index.html`](index.html) file in your browser so that the required resources load properly)
+#### [`setup.ps1`](setup.ps1)
+This script installs `wasm-bindgen-cli`, `basic-http-server`
+and adds `wasm32-unknown-unknown` to possible compilation targets.
 
-When you're happy with the built project, it's already ready for GitHub Pages, just enable the feature in your repository settings.
+(This is only necessary to run once on a single computer as the effects
+of this script are global.)
+
+#### [`build.ps1`](build.ps1)
+This script builds the project for the `wasm32-unknown-unknown` target in
+`--release` mode, generates WASM bindings, and patches the generated JavaScript
+file. It also moves the relevant files to their appropriate directories
+in preparation for running the project on a local server or on GitHub Pages.
+
+#### [`run.ps1`](run.ps1)
+This script hosts the built project on a local `basic-http-server`
+server and opens a browser at its location.
+
+(One does not need to restart the server after building the project again,
+reloading the webpage in the browser is sufficent.)
+
+(This is necessary over just opening the [`index.html`](index.html)
+file in your browser so that the required resources load properly.)
 
 ## License
 
@@ -35,16 +62,3 @@ at your option.
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
-
-## TODO:
-
-- Rewrite [`README.md`](README.md) to fit future projects spawned from this template
-
-- Test polyglot scripts on Linux
-
-- Test audio capablities on web
-  - https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
-
-- Run script? (local server)
-  - `cargo install basic-http-server`
-  - `basic-http-server .`
