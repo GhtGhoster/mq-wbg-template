@@ -13,7 +13,7 @@ PowerShell (v6+ not required) as well as bash for Linux (scripts are polyglot)
 (The bash portion of the polyglot scripts is untested, use with caution
 and please report back with results or a pull request)
 
-#### [`rename.ps1`](rename.ps1)
+### [`rename.ps1`](rename.ps1)
 This script changes the internal name of the project in the files
 [`src\main.rs`](src\main.rs),
 [`Cargo.toml`](Cargo.toml), and
@@ -23,20 +23,20 @@ to match the name of the repository, and allows `cargo` to work correctly.
 (This is only necessary to run once after a repository was first created with the
 [`mq-wasm-pages`](https://github.com/GhtGhoster/mq-wasm-pages) template.) 
 
-#### [`setup.ps1`](setup.ps1)
+### [`setup.ps1`](setup.ps1)
 This script installs `wasm-bindgen-cli`, `basic-http-server`
 and adds `wasm32-unknown-unknown` to possible compilation targets.
 
 (This is only necessary to run once on a single computer as the effects
 of this script are global.)
 
-#### [`build.ps1`](build.ps1)
+### [`build.ps1`](build.ps1)
 This script builds the project for the `wasm32-unknown-unknown` target in
 `--release` mode, generates WASM bindings, and patches the generated JavaScript
 file. It also moves the relevant files to their appropriate directories
 in preparation for running the project on a local server or on GitHub Pages.
 
-#### [`run.ps1`](run.ps1)
+### [`run.ps1`](run.ps1)
 This script hosts the built project on a local `basic-http-server`
 server and opens a browser at its location.
 
