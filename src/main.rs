@@ -1,7 +1,7 @@
 
 use macroquad::prelude::*;
 
-#[macroquad::main("mq-wasm-pages")]
+#[macroquad::main("mq-wbg-template")]
 async fn main() {
     loop {
         // ui

@@ -22,11 +22,6 @@ More interesting crates to look out for in the future:
 - [`quad-storage`](https://crates.io/crates/quad-storage)
 - [`quad-url`](https://crates.io/crates/quad-url)
 
-
-TODO:
-- rename to "mq-wbg-template"
-- rework the rename.ps1 script
-
 ## Instructions and dependencies:
 
 All scripts listed below are compatible with default Windows installation of
@@ -43,7 +38,7 @@ This script changes the internal name of the project in the files
 to match the name of the repository, and allows `cargo` to work correctly.
 
 (This is only necessary to run once after a repository was first created with the
-[`mq-wasm-pages`](https://github.com/GhtGhoster/mq-wasm-pages) template.) 
+[`mq-wbg-template`](https://github.com/GhtGhoster/mq-wbg-template) template.) 
 
 ### [`setup.ps1`](setup.ps1)
 This script installs `wasm-bindgen-cli`, `basic-http-server`
