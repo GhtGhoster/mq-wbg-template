@@ -2,8 +2,23 @@
 
 This repository serves as a template for projects based on the Rust
 [`macroquad`](https://github.com/not-fl3/macroquad) crate.
+Included are
+[`rand`](https://github.com/rust-random/rand),
+[`getrandom`](https://github.com/rust-random/getrandom),
+[`egui`](https://github.com/emilk/egui), and
+[`egui-macroquad`](https://github.com/optozorax/egui-macroquad)
+crates for future convenience.
 Its intention is making WASM building, WASM bindings generation,
 and readying the repository for GitHub Pages as painless as possible.
+
+(2 _"required"_ `.js` files from `egui-macroquad` -> 
+[`quad-url`](https://github.com/optozorax/quad-url)
+omitted because nothing broke so far)
+
+
+More interesting crates to look out for in the future:
+- [`quad-storage`](https://crates.io/crates/quad-storage)
+- [`quad-url`](https://crates.io/crates/quad-url)
 
 ## Instructions and dependencies:
 

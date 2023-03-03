@@ -6,9 +6,9 @@ async fn main() {
     loop {
         // ui
         egui_macroquad::ui(|egui_ctx| {
-            egui::Window::new("top")
+            egui::Window::new("Hello")
                 .show(egui_ctx, |ui| {
-                    ui.label("kek");
+                    ui.label("World!");
                 }
             );
         });
