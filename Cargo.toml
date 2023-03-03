@@ -11,5 +11,7 @@ categories = ["game-development", "wasm", "web-programming"]
 
 [dependencies]
 macroquad = "0.3.25"
+egui = "0.21.0"
+egui-macroquad = "0.15.0"
 rand = "0.8.5"
 getrandom = {version = "0.2.8", features = ["js"]}
