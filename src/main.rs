@@ -3,10 +3,10 @@ use macroquad::prelude::*;
 
 #[macroquad::main("mq-wbg-template")]
 async fn main() {
-    loop {
-        // debugging
-        // std::env::set_var("RUST_BACKTRACE", "1");
+    // debugging
+    // std::env::set_var("RUST_BACKTRACE", "1");
 
+    loop {
         // ui
         egui_macroquad::ui(|egui_ctx| {
             egui::Window::new("Hello")
