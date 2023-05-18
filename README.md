@@ -30,7 +30,7 @@ PowerShell (v6+ not required) as well as bash for Linux (scripts are polyglot)
 (The bash portion of the polyglot scripts is untested, use with caution
 and please report back with results or a pull request)
 
-### [`rename.ps1`](rename.ps1)
+### [`rename.ps1`](rename.ps1) `"new-repository-name:`
 This script changes the internal name of the project in the files
 [`src\main.rs`](src\main.rs),
 [`Cargo.toml`](Cargo.toml), and
@@ -62,6 +62,12 @@ reloading the webpage in the browser is sufficent.)
 
 (This is necessary over just opening the [`index.html`](index.html)
 file in your browser so that the required resources load properly.)
+
+## Sources:
+### JS patching scripts:
+- https://gist.github.com/tgolsson/d78f7887a8542f3fd6f125070e5e22d6
+- https://gist.github.com/nobbele/0d932a993786ed081632254fb6b01e25
+- https://gist.github.com/olefasting/15ae263da4cf1ba308ce55c15c9b221b
 
 ## License
 
