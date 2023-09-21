@@ -1,9 +1,9 @@
 #!/bin/bash
 echo `# <#`
 
-# Bash goes here
+# Bash goes here (tested on Ubuntu)
 
-xdg-open basic-http-server .
+gnome-terminal -- basic-http-server .
 xdg-open http://localhost:4000
 
 exit

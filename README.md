@@ -27,9 +27,6 @@ More interesting crates to look out for in the future:
 All scripts listed below are compatible with default Windows installation of
 PowerShell (v6+ not required) as well as bash for Linux (scripts are polyglot)
 
-(The bash portion of the polyglot scripts is untested, use with caution
-and please report back with results or a pull request)
-
 ### [`rename.ps1`](rename.ps1)
 This script changes the internal name of the project in the files
 [`src\main.rs`](src\main.rs),
@@ -47,6 +44,9 @@ This script installs `wasm-bindgen-cli` (version 0.2.84), `basic-http-server`
 and adds `wasm32-unknown-unknown` to possible compilation targets.
 Note that this version of `wasm-bindgen-cli` is required for the pipeline
 defined in this repository.
+
+On linux, this script also installs `libssl-dev` and `libasound2-dev`,
+which are required for `basic-http-server` and `macroquad` to run respectively.
 
 (This is only necessary to run once on a single computer as the effects
 of this script are global.)

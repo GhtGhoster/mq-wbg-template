@@ -8,7 +8,7 @@ PROJECT_NAME=${PWD/*\//}
 
 sed -i "s/mq-wbg-template/${PROJECT_NAME}/" src/main.rs
 sed -i "s/mq-wbg-template/${PROJECT_NAME}/" Cargo.toml
-sed -i "s/mq-wbg-template/${PROJECT_NAME}/" intex.html
+sed -i "s/mq-wbg-template/${PROJECT_NAME}/" index.html
 
 cargo clean
 
